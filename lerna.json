@@ -1,0 +1,16 @@
+{
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "ignoreChanges": ["ignored-file", "**/__tests__/**", "**/*.md"],
+  "command": {
+    "publish": {
+      "registry": "http://localhost:4873"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish"
+    }
+  }
+}
